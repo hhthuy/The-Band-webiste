@@ -29,8 +29,10 @@ Review
 ### Demo Website
 ![Home](./demo/Home.jpg)
 ![Band](./demo/Band.jpg)
+![Tour](./demo/Tour.jpg)
 ![Contact](./demo/Contact.jpg)
 ![Contact1](./demo/Contact1.jpg)
+![Modal](./demo/Modal.jpg)
 
 
 
