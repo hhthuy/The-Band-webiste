@@ -1,0 +1,79 @@
+/* Responsvie với PC, Tablet, Mobile */
+/* 
+    PC >= 1024px
+    Tablet: >=740px & < 1024px
+    Mobile: < 740px
+*/
+/* resposive.css Ghi de thuoc tinh css trong style.css vi link resposive.css dat sau */
+/* -------------------------------------- */
+/* Tablet */
+@media (min-width: 768px) and (max-width:1024px){
+    #content .content-section{
+       /*Responsive mobile */
+       max-width: 100%;
+       padding: 64px 16px 112px;
+       /*Ipad( max-width:100% manh hon width:800px -> keo 800px xuong 100% tablet(768px ipad))
+         Them padding-left:16px; padding-right:16px
+         Vi .row margin-left/right: 8px; -> ra ngoai 2 ben 8px-> them the cha 16px left/right 
+       */ 
+    }  
+}
+/* Tablet (C2)*/
+    /* #wrapper{
+    overflow: hidden;
+} */
+/* -------------------------------------- */
+/* PC */
+@media (min-width: 1024px){
+    
+}
+/* -------------------------------------- */
+/* Mobile (Iphone 6/7/8 plus: 414x736)  */
+@media (max-width: 736px) {
+
+    /** Mobile menu responsive*/
+    #nav li {
+        display: block;/* inline-block -> block*/ 
+    }
+    #header{
+        /*overflow: Khi đối tuợng con vượt nó thì làm gì? hidden, visible,... */
+        /*Do menu là display:block là trên xuống -> Menu Band, Tour, Contact tràn xuống -ẩn  */
+        overflow: hidden; 
+    }
+    #header .mobile-menu-btn{
+        display: block;/* Keo Tablets, PC an di ti-menu hien thi ti-search */  
+    }
+    #header .search-btn{
+        display: none;/* Ẩn nút search trên menu */
+    }
+    
+    /** Mobile menu fix bug: */
+    /** Fix Icon menu bị lệch và Chỉ hiện thị nút icon menu trên mobile, ẩn đi trên PC, tablets (PC/tablets hiển thị icon search)*/   
+    /* Fix Icon menu bị lệch xuong => Chỉ trên mobile luôn cho nav là display: block */
+    #nav {
+        display: block;
+        width: 100%;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    /** Mobile submenu fix bug*/
+    /** Bấm vào menu cấp 2 button (More)  -> Không ẩn menu, hiện submenu */
+    #nav .subnav{
+        position: inherit; /* Remove position:absolute tren PC nen Mobile ko can ->inherit */
+       background-color: #333;
+    }
+    #nav .subnav a{
+       color: #fff;
+       padding: 5px 41px;/*** Tối thiểu 42px-48px -> Tay người dùng mới dễ tương tác */
+    }
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+
+
+
+    
+
+}

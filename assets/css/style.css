@@ -45,6 +45,7 @@ style:
     left: 0;
     right: 0;
     z-index: 1;/* ảnh slider ko bị menu che đi */
+    /* Mobile menu responsive */
 }
 
 #nav, .subnav{
@@ -79,6 +80,7 @@ style:
 #nav > li:hover > a {
     color: #000;
     background-color: #ccc;
+
 }
 #nav .subnav{
     display: none;
@@ -158,10 +160,13 @@ style:
 }
 #content .content-section{
     width: 800px;
-     /*Can giua */
-     padding: 64px 0px;
+    padding: 64px 0px 112px;
     margin-left: auto;
     margin-right: auto;
+    /*Responsive mobile*/
+    max-width: 100%;
+    padding: 64px 16px 112px;
+
 }
 #content .section-heading{
     text-align: center;
@@ -536,3 +541,34 @@ style:
 #footer .copyright a{
     color: rgba(0, 0, 0, 0.6);
 }
+
+/* Responsvie với PC, Tablet, Mobile */
+/* 
+    PC >= 1024px
+    Tablet: >=740px & < 1024px
+    Mobile: < 740px
+*/
+
+/* Mobile menu responsive  */
+/* CSS Button Menu (CSS Giong Button Search */
+#header .mobile-menu-btn{
+    float: right;
+    padding: 0 21px;
+}
+#header .mobile-menu-btn:hover .menu-icon{/* hover mobile: Chạm tay vào */
+    color: #000;
+}
+#header .menu-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+/* Mobile menu fix bug */
+#header .mobile-menu-btn{
+    position: absolute;/*absolute:  elemnet nằm trên elemnet khác (nav icon menu nằm trên thanh header*/
+    top: 0;
+    right: 0;
+    display: none;
+}
+
