@@ -27,11 +27,7 @@ or
 12. Map, footer CSS\
 Review
 ### Demo Website
-![Home](./demo/Home.jpg)
-![Band](./demo/Band.jpg)
-![Tour](./demo/Tour.jpg)
-![Contact](./demo/Contact.jpg)
-![Contact1](./demo/Contact1.jpg)
+![Theband](./demo/PC-TheBand.png)
 ![Modal](./demo/Modal.jpg)
 
 
