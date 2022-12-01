@@ -16,7 +16,13 @@
          Them padding-left:16px; padding-right:16px
          Vi .row margin-left/right: 8px; -> ra ngoai 2 ben 8px-> them the cha 16px left/right 
        */ 
-    }  
+    }
+    /* Review, fix UX */
+    /* Text*/
+        .contact-info{
+        line-height: 2;
+    }
+      
 }
 /* Tablet (C2)*/
     /* #wrapper{
@@ -71,9 +77,63 @@
         padding: 1px 24px;
     }
 
-
-
-
+    /* Content responsive */
+    .members-list .mobile-member-item{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    #content .member-img{
+        width: 60%;
+    }
     
-
+    .tour-section .mobile-col-full{
+        margin-top: 32px;
+        width: 100%;/* Chi mobile, ko anh huong PC, tablets */
+    }
+    /* Contact form responsive */
+    .contact-content .mobile-col-full{
+        margin-top: 16px;
+        width: 100%; /*Chi mobile, ko anh huong PC, tablets */
+    }
+    .contact-content .mobile-input{
+        margin-top: 8px;
+    }
+    .mobile-btn{
+        width: 100%;
+        text-align: center;
+    }
 }
+/* Review, fix UX */
+    /* Sửa các nút button trên Tablets và Mobile (height:42px-48px) */
+    @media (max-width: 1024px) and (min-width:768px){
+        /* button */
+         .btn{
+            padding: 15px 16px;
+        }
+        /* input */
+        .contact-form .form-control{
+            padding: 15px;
+        }
+        /* Text */
+         .contact-form{
+             margin-top: 32px;
+             line-height: 2;
+         }
+        /* icon socials */
+        #footer .socials-list{
+            margin: 0 8px;
+        }
+        /* link */
+        #footer .copyright a{
+             padding: 12px 0px;
+             display: inline-block;
+        }
+        /* menu */
+        /* menu paren: 46px, menu child(12*3): 38px */
+        #nav .subnav a{
+             padding: 5px 12px;
+        }
+     }
+ 
+ 
