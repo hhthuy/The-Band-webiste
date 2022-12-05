@@ -6,8 +6,8 @@
 */
 /* resposive.css Ghi de thuoc tinh css trong style.css vi link resposive.css dat sau */
 /* -------------------------------------- */
-/* Tablet */
-@media (min-width: 768px) and (max-width:1024px){
+/* Tablet (740px-1023px) */
+@media (min-width: 46.25em) and (max-width:63.9375em){
     #content .content-section{
        /*Responsive mobile */
        max-width: 100%;
@@ -34,8 +34,8 @@
     
 }
 /* -------------------------------------- */
-/* Mobile (Iphone 6/7/8 plus: 414x736)  */
-@media (max-width: 736px) {
+/* Mobile (739px)  */
+@media (max-width: 46.1875em) {
 
     /** Mobile menu responsive*/
     #nav li {
@@ -78,9 +78,16 @@
     }
 
     /* Content responsive */
+    #content .member-name{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        margin-left: 1px;
+        
+    }
     .members-list .mobile-member-item{
         margin-top: 30px;
-        width: 100%;
+        width: 100% !important;
         text-align: center;
     }
     #content .member-img{
@@ -94,10 +101,10 @@
     /* Contact form responsive */
     .contact-content .mobile-col-full{
         margin-top: 16px;
-        width: 100%; /*Chi mobile, ko anh huong PC, tablets */
+        width: 100% !important;; /*Chi mobile, ko anh huong PC, tablets */
     }
     .contact-content .mobile-input{
-        margin-top: 8px;
+        margin-top: 8px !important;;
     }
     .mobile-btn{
         width: 100%;
@@ -105,8 +112,8 @@
     }
 }
 /* Review, fix UX */
-    /* Sửa các nút button trên Tablets và Mobile (height:42px-48px) */
-    @media (max-width: 1024px) and (min-width:768px){
+    /* /* Tablet and mobile (1023px)*/
+    @media (max-width: 63.9375em){
         /* button */
          .btn{
             padding: 15px 16px;

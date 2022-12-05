@@ -152,6 +152,7 @@ style:
     font-size: 15px;
     margin-top: 25px;
     font-family: Lato;
+    text-shadow: 0 0 1px #000;
 }
 
 /* About section CSS */
@@ -192,7 +193,7 @@ style:
 
 /* Team section CSS */
 #content .members-list {
-    margin-top: 32px;
+    margin-top: 32px !important;
 }
 #content .member-item{
     padding-top: 30px;
@@ -202,6 +203,9 @@ style:
 }
 #content .member-name{
     font-size: 15px;
+    text-align: center;
+    width: 100%;
+    margin-left: -42px;
     
 }
 #content .member-img{
